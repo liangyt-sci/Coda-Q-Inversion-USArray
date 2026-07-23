@@ -1,15 +1,5 @@
 function [new_data, model, diagnostics] = coda_q_inversion(data, cfg)
 %CODA_Q_INVERSION Two-point event/station coda-Q inversion.
-%
-% The input data matrix must follow reorder_coda_for_inversion.m:
-%   1 eve, 2 sta, 3 event id, 4 evlo, 5 evla, 6 evdp,
-%   7 dist, 8 az, 9 mag, 10 stla, 11 stlo, 12 tbeg,
-%   13:12+n_amp log10(coda energy).
-%
-% The model is:
-%   log10(E) + alpha*log10(t)
-%     = event_amp + station_amp
-%       - log10(e)*t*(event_q_term + station_q_term)
 
 cfg = fill_defaults(cfg);
 C = log10(exp(1));
