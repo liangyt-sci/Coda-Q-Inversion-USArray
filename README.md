@@ -20,7 +20,7 @@ MATLAB codes for coda-wave attenuation analysis based on the coda-Q inversion fr
 6. `reorder_coda_for_inversion.m`  
    Reorganizes event and station information for inversion.
 
-7. `filter_event_station_pairs_public.m`  
+7. `filter_event_station_pairs.m`  
    Filters event-station pairs according to data availability criteria.
 
 8. `coda_q_inversion.m`  
